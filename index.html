@@ -15,23 +15,24 @@
 
 <body>
     <!--main nav container-->
-    <div class="container mainnavDiv">
+    <nav class="navbar navbar-expand-lg navbar-light navbarstyle">
 
         <!--navbar to contain name and buttons-->
-        <nav class="navbar navbar-expand-lg navbar-light navbarstyle">
-            <div class="nameBar">
+        <div class="container mainnavDiv">
+            <div class="container nameBar">
                 <h1 id="myName">Shan</h1>
             </div>
             <!--buttons in nav-->
-            <div class="navbar-nav sectionBar">
-                <a class="nav-item hvr-underline-from-center mybtn" href="index.html" >About</a>
-                <a class="nav-item hvr-underline-from-center mybtn" href="portfolio.html" >Portfolio</a>
-                <a class="nav-item hvr-underline-from-center mybtn1" href="contact.html" >Contact</a>
+            <div class="container sectionBar">
+                <a class="nav-item hvr-underline-from-center mybtn" href="index.html">About</a>
+                <a class="nav-item hvr-underline-from-center mybtn" href="portfolio.html">Portfolio</a>
+                <a class="nav-item hvr-underline-from-center mybtn1" href="contact.html">Contact</a>
             </div>
-        </nav>
 
-    </div>
+        </div>
+    </nav>
 
+    
     <!--main container containing about me section-->
 
     <div class="container contentContainer">
@@ -40,7 +41,9 @@
 
             <h1 id="aboutMe">About Me</h1>
             <hr class="hrStyle">
-            <img src="assets/images/myProfile.jpg" class="rounded float-left profilePhoto" alt="profile Photo" height="200" width="269">
+
+            <img src="assets/images/myProfile.jpg" class="img-fluid profilePhoto" alt="profile Photo">
+
             <p class="bioText">Hi! Welcome to my page! My name is Shan Indrakumar and I am a developer but definitely not your average one.
                 I come from an Accounting background - 10 years of it! But along the way in my wonderful career in commerical
                 real estate working for Canada's largest REIT, I realized it was time to pursue my passions and learn the
@@ -65,11 +68,11 @@
 
         </div>
     </div>
-  
+
 
     <footer class="footer">
         <div class="container-footer">
-        <p class=copyRight>Copyright &copy;</p>
+            <p class=copyRight>Copyright &copy;</p>
         </div>
     </footer>
 

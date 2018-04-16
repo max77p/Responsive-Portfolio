@@ -11,9 +11,60 @@ html{
     min-height:100%;
     
 }
-a:focus:active{
-    outline:none;
+@media (max-width:980px){
+    .jumboStyle{
+        max-width:650px !important;
+       margin-left:0px !important;  
+    }
+
+
+    .mainProjContainer{
+        width:100% !important;
+    }
+
+  
 }
+
+@media (max-width:768px){
+    .jumboStyle,.navbarstyle{
+        max-width:100% !important;
+        
+    }
+}
+@media (max-width:640px){
+
+    .mainnavDiv{
+        height:auto;
+    }
+    .jumboStyle,.navbarstyle{
+        max-width:100% !important;
+        
+    }
+    .profilePhoto{
+width:100% !important;
+    }
+  
+
+  .nameBar{
+      max-width:100% !important;
+     width:100% !important;
+  }
+  .sectionBar{
+     max-width:100% !important;
+     width:100% !important;
+     background-color:white;
+    padding:20px !important;
+    display:flex;
+    justify-content: center;    
+  }
+ 
+  .contentContainer{
+      margin-top:100px !important;
+  }
+
+
+}
+
 
 
 #myName{
@@ -24,19 +75,18 @@ a:focus:active{
 }
 
 .navbarstyle{
-padding:0;
 justify-content: space-between;
 font-family:Georgia, 'Times New Roman', Times, serif;
-height:70px;
-max-width:960px;
+border-bottom:2px solid #cccccc;
 margin:0 auto;
+background-color:#ffffff;
+padding:0;
 }
 
 .mainnavDiv{
-    background-color:#ffffff;
-    border-bottom:2px solid #cccccc;
-    max-width:100%;
-    padding:0;
+max-width:960px;
+    padding:0 15px 0 15px !important;
+    height:60px;
 }
 
 .nameBar{
@@ -47,12 +97,15 @@ margin:0 auto;
     width:20em;
     height:100%;
     padding:0px 20px 0px 20px;
-
+margin-left:0;
     
 }
 
 .sectionBar{
-    flex-direction:row;
+   justify-content:center;
+    width:auto;
+    margin-right:0;
+    padding-right:0;
 }
 
 .mybtn,.mybtn1{
@@ -83,6 +136,7 @@ margin:0 auto;
     padding-right:0;
 }
 /* Underline From Center */
+/*
 .hvr-underline-from-center {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);  
@@ -109,11 +163,11 @@ margin:0 auto;
     right: 0;
     
   }
-
+*/
 
 
 .contentContainer{
-    padding:0;
+
     max-width:960px;
     margin:0 auto;
     margin-bottom:20px;
@@ -136,24 +190,32 @@ margin:0 auto;
     font-size:2em;
     font-weight:bold;
 }
-  .hrStyle {
+  .hrStyle{
     height: 2px;
     background-color: #dddddd;
-    width: 100%;
+    max-width: 100%;
     border: 1px;
 }
 
+
+
+
   .profilePhoto{
     margin:.3125em 1.5em 1em 0;
+    float:left;
+    width: 270px;
+    height:auto;
 }
+
+
 
 textarea{
     height:15em;
 }
 .mainProjContainer{
     padding:0;
-    width:80%;
     margin:0;
+    width:80%;
 }
 .individualProjContainer{
     position:relative;
