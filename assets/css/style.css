@@ -168,6 +168,7 @@ margin-left:0;
     background-color:white;
     color: #777777;;
     border-color:#ADADAF;
+    text-decoration:none !important;
 }
 .mybtn,.mybtn1{
     border-right:1px solid;
@@ -183,17 +184,21 @@ margin-left:0;
 /* Underline From Center */
 
 .hvr-underline-from-center {
+    display: inline-block;
+    /*vertical-align: text-bottom;*/
     -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);  
-
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    /*overflow: hidden;*/
   }
-.hvr-underline-from-center:before {
+  .hvr-underline-from-center:before {
     content: "";
     position: absolute;
     z-index: -1;
     left: 51%;
     right: 51%;
-    margin-top:10px;
+    bottom: -5px;
     background: #4aaaa5;
     height: 4px;
     -webkit-transition-property: left, right;
@@ -206,7 +211,7 @@ margin-left:0;
   .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     left: 0;
     right: 0;
-    
+  
   }
 
 
@@ -344,5 +349,6 @@ textarea{
 
 .copyRight{
     margin:0;
+    color:#ffffff;
 }
 
