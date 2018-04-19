@@ -181,7 +181,7 @@ margin-left:0;
     padding-right:0;
 }
 /* Underline From Center */
-/*
+
 .hvr-underline-from-center {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);  
@@ -208,7 +208,7 @@ margin-left:0;
     right: 0;
     
   }
-*/
+
 
 
 .contentContainer{
@@ -249,8 +249,13 @@ max-width:960px;
 .boxSpacing{
     margin-top:20px;
     max-width:35%;
+  
 }
 
+.projImg{
+    position:relative;
+    max-width:fit-content;
+}
 
   .profilePhoto{
     margin:.3125em 1.5em 1em 0;
@@ -277,7 +282,8 @@ textarea{
 .projectInfo{
    position:absolute;
    bottom:10px;
-    max-width:100%;
+   left:15px;
+    max-width:285px;
     background-color:#4aaaa5;
     color:#ffffff;
     font-size:18px;
